@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail AI</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Inter Tight';" class="p-15 py-15">
+    <div class="header w-full flex items-center justify-center flex-col">
+        <p class="font-[800] text-3xl text-center">Thumbnail AI</p>
+        <p class="subtitle text-center">upload images, get your thumbnail</p>
+    </div>
+    <div class="form-section mt-10 ">
+        <form action="/upload" method="POST" class="flex flex-col gap-5" enctype="multipart/form-data">
+            <div class="sect flex flex-col">
+                <label for="video-title">Video Title</label>
+                <input type="text" class="border-[0.1px] py-1 px-2 outline-none" name="video-title" id="video-title">
+            </div>
+            <div class="sect flex flex-col">
+                <label for="ideas">Things You Have In Mind/Ideas</label>
+                <input type="text" class="border-[0.1px] py-1 px-2 outline-none" name="ideas" id="ideas">
+            </div>
+            <div class="sect flex flex-col">
+                <label for="inspiration">Inspiration</label>
+                <input type="file" multiple class="border-[0.1px] py-1 px-2 outline-none" name="inspiration" id="inspiration">
+            </div>
+            <div class="sect flex flex-col">
+                <label for="assets">Assets</label>
+                <input type="file" multiple class="border-[0.1px] outline-none py-1 px-2" name="assets" id="assets">
+            </div>
+            <button class="bg-black px-3 py-2 text-white" type="submit">Upload</button>
+        </form>
+    </div>
+    
+</body>
+</html>
