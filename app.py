@@ -63,7 +63,7 @@ Produce a polished, visually striking YouTube thumbnail that combines:
 - the base image
 - inspiration asset design strategies
 - improved lighting and clarity
-- strong YouTube thumbnail design principles.""""
+- strong YouTube thumbnail design principles."""
     })
 
     # add inspiration images
